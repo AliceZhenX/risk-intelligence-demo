@@ -1,0 +1,8 @@
+# Copyright 2025 AliceZhenX
+# Licensed under the Apache License, Version 2.0 (see LICENSE file)
+# This requirements file lists dependencies for the FastAPI backend.
+
+fastapi
+uvicorn[standard]
+pydantic
+pytest
