@@ -1,0 +1,21 @@
+{
+  "_comment": "Copyright 2025 AliceZhenX. Licensed under the Apache License, Version 2.0. See LICENSE file.",
+  "name": "intl-risk-advisor-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "13.5.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "recharts": "^2.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}
