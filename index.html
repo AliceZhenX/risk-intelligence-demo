@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Risk Intelligence Demo</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+<h1>International Market Risk Intelligence Platform</h1>
+<p>This is a demo page for our risk intelligence platform.</p>
+<div id="radar" style="width: 600px; height: 400px;"></div>
+<script>
+var chart = echarts.init(document.getElementById('radar'));
+var option = {
+    title: {
+        text: 'Demo Risk Radar'
+    },
+    radar: {
+        indicator: [
+            { name: 'Overall Risk', max: 1 },
+            { name: 'Economic Risk', max: 1 },
+            { name: 'Political Risk', max: 1 }
+        ]
+    },
+    series: [{
+        type: 'radar',
+        data: [{
+            value: [0.7, 0.6, 0.8],
+            name: 'Sample Country'
+        }]
+    }]
+};
+chart.setOption(option);
+</script>
+</body>
+</html>
